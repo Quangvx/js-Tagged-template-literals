@@ -1,0 +1,27 @@
+.main {
+
+}
+.main2 {
+  background-color: violet;  
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+    .highlight {
+       color: transparent;
+
+        background: -webkit-linear-gradient(45deg,
+#5ebbff -33%,
+#a174ff 69%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    /* return values.reduce(
+      function(acc, curr) {
+        return [
+          ...acc,
+          `<span>${course}</span>`
+        ], [first]
+      }
+    ) */
