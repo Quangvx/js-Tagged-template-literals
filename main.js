@@ -1,37 +1,37 @@
 
+  //  code right
+// function heightlight([first,...strings],...values) {
 
-function heightlight([first,...strings],...values) {
-
-  return values.reduce( function(initialValue, currentValue) 
-{ return [...initialValue ,` <span> ${currentValue}</span>`, strings.shift() ] },
-   [first] ).join(' ')
+//   return values.reduce( function(initialValue, currentValue) 
+// { return [...initialValue ,` <span> ${currentValue}</span>`, strings.shift() ] },
+//    [first] ).join(' ')
   
-  }
+//   }
   
-  var brand = 'F8';
-   var course = 'Javascript';
+//   var brand = 'F8';
+//    var course = 'Javascript';
 
 
   
-  const html = `Học lập trình ${course} tại ${brand} !`;
+//   const html = `Học lập trình ${course} tại ${brand} !`;
   
-  console.log(html);
+//   console.log(html);
 
 
-// Error code in comment f8-basic Javascript
+function hightLight([first, ...strings],...values)  {
+  
+       return values.reduce(
+        function(initialValue, currentValue) {
+          return [...initialValue, ` <span> ${currentValue}</span>`,strings.shift() ]
 
-  // function heightlight([first, …strings],…values) {
+        }, [first]
+       ).join(' ')
 
-  //   return values.reduce( function(initialValue, currentValue)
-  //  { return [ …initialValue , <span> ${currentValue}</span>, strings.shift() ] },
-  //  [first] ).join(’ ')
-    
-  //   }
-    
-  //   var brand = ‘F8’; var course = ‘Javascript’;
-    
-  //   const html = heightlightHọc lập trình ${course} tại ${brand} !;
-    
-  //   console.log(html);
+}
 
- 
+var brand = 'F8';
+var course = 'Javascript';
+
+
+var html = hightLight`Học lập trình ${course} tại ${brand} !`;
+console.log(html);
